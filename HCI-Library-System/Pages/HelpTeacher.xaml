@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="HCI_Library_System.Pages.HelpTeacher"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HCI_Library_System.Pages"
+             mc:Ignorable="d" 
+             xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Background="White">
+        <Expander Header="Add a book" Custom:ControlsHelper.HeaderFontSize="20">
+            <StackPanel>
+                <TextBlock Margin="5" TextWrapping="Wrap" FontSize="18" 
+               Text="Go to the books tab, Click the Plus icon, then proceed to fill the form that appeared and click save" />
+            </StackPanel>
+        </Expander>
+        <Expander Header="Request a book" Custom:ControlsHelper.HeaderFontSize="20">
+            <StackPanel>
+                <TextBlock Margin="5" TextWrapping="Wrap" FontSize="18" 
+               Text="Go to the books tab, select the book you want and double click it or right click > Request book"/>
+            </StackPanel>
+        </Expander>
+        <Expander Header="Cancel a request" Custom:ControlsHelper.HeaderFontSize="20">
+            <StackPanel>
+                <TextBlock Margin="5" TextWrapping="Wrap" FontSize="18" 
+               Text="Go to the requests tab, right click the request you want to cancel and choose Cancel"/>
+            </StackPanel>
+        </Expander>
+        <Expander Header="Favorite a book" Custom:ControlsHelper.HeaderFontSize="20">
+            <StackPanel>
+                <TextBlock Margin="5" TextWrapping="Wrap" FontSize="18" 
+               Text="Go to the books tab, select the book you want and right click  it > Favorite book"/>
+            </StackPanel>
+        </Expander>
+    </StackPanel>
+</UserControl>
