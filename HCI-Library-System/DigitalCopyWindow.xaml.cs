@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using HCI_Library_System.Model;
 
 namespace HCI_Library_System
 {
@@ -20,9 +21,10 @@ namespace HCI_Library_System
     /// </summary>
     public partial class DigitalCopyWindow : MetroWindow
     {
-        public DigitalCopyWindow()
+        public DigitalCopyWindow(Book book)
         {
             InitializeComponent();
+            webBrowser.Url = new Uri(book.DigitalCopyUrl);
         }
     }
 }

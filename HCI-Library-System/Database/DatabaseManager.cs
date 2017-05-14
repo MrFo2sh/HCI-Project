@@ -83,7 +83,7 @@ namespace HCI_Library_System.Database
                 command.CommandText = "INSERT INTO users_tbl VALUES('admin', 'admin', 'Mohamed','Fouad',DATETIME('now'), 'test@ssd.com', 2, '"+image.UriSource.ToString()+"')";
                 command.ExecuteNonQuery();
 
-                command.CommandText = "INSERT INTO users_tbl VALUES('teacher', 'teacher', 'Hesham','ElDeeb',DATETIME('now'), 'tesasdast@ssd.com', 1, '" + image.UriSource.ToString() + "')";
+                command.CommandText = "INSERT INTO users_tbl VALUES('staff', 'staff', 'Essam','Hamed',DATETIME('now'), 'tesasdast@ssd.com', 1, '" + image.UriSource.ToString() + "')";
                 command.ExecuteNonQuery();
 
                 command.CommandText = "INSERT INTO users_tbl VALUES('student', 'student', 'Muhammad','Khaled',DATETIME('now'), 'tesasdast@ssd.com', 0, '" + image.UriSource.ToString() + "')";

@@ -29,7 +29,7 @@
                            Foreground="{DynamicResource BlackBrush}"
                            Text="The book should be viewed below" />
                 <WindowsFormsHost Grid.Row="1">
-                    <winForms:WebBrowser Url="http://www.google.com" />
+                    <winForms:WebBrowser x:Name="webBrowser" />
                 </WindowsFormsHost>
             </Grid>
         </Border>

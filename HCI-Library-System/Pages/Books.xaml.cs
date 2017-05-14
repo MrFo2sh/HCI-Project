@@ -106,7 +106,7 @@ namespace HCI_Library_System.Pages
 
         private void ShowDigitalCopy_Click(object sender, RoutedEventArgs e)
         {
-            new DigitalCopyWindow().Show();
+            new DigitalCopyWindow(listBooks.SelectedItem as Book).Show();
         }
 
         private void requestBook_Click(object sender, RoutedEventArgs e)
